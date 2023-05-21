@@ -41,6 +41,12 @@
     .web-col{
         width: 25%;
     }
+    #hera{
+        margin-bottom: 7%;
+    }
+    .k-pading{
+        padding-right: 8%;
+    }
 }
 
 /* tablet dimensions */
@@ -86,6 +92,12 @@
     .col-t-12{
         width: 100%;
     }
+    #hera{
+        margin-bottom: 3%;
+    }
+    .k-pading{
+        padding-right: 7%;
+    }
 }
 
 /* desktop dimensions */
@@ -129,6 +141,9 @@
     }
     .col-12{
         width: 100%;
+    }
+    .displaynone{
+        display: none;
     }
 }
 
@@ -219,7 +234,7 @@ iframe{
     border: none;
 }
 
-@keyframes transition{
+/* @keyframes transition{
     from {
         opacity: 0;
         transform: rotateX(-10deg);
@@ -229,7 +244,7 @@ iframe{
         transform: rotateX(0);
 
     }
-}
+} */
 
     /* INDEX.HTML */
 
@@ -401,7 +416,6 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
 
 #tabelausluga{
     background-color: var(--bela);
-    padding: 0%;
     text-align: center;
 }
 
