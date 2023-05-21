@@ -1,0 +1,472 @@
+        /* MAIN PODESAVANJA*/
+
+/* boje stranice */
+
+:root{
+    --roze1: rgb(232,213,220);
+    --roze2: rgb(111,36,65);
+    --roze3: rgb(225,81,132);
+    --roze4: rgb(218,141,171);
+    --roze5: rgb(172,52,96);
+    --roze6: rgb(54, 10, 27);
+    --bela: white;
+    --crna: black;
+}
+
+/* font */
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url("Raleway-MediumItalic.ttf");
+}
+
+/* responzivnost */
+
+.row{
+    width: 100% ;
+    overflow:hidden;
+}
+
+/* mobile dimensions */
+
+@media only screen and (max-width:600px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .web-col{
+        width: 25%;
+    }
+}
+
+/* tablet dimensions */
+
+@media only screen and (min-width:601px) and (max-width:1000px){
+    [class*="col-"]{
+        width: 100%;
+        float:left;
+    }
+    .col-t-1{
+        width: 8.33%;
+    }
+    .col-t-2{
+        width: 16.66%;
+    }
+    .col-t-3{
+        width: 25%;
+    }
+    .col-t-4{
+        width: 33.33%;
+    }
+    .col-t-5{
+        width: 41.66%;
+    }
+    .col-t-6{
+        width: 50%;
+    }
+    .col-t-7{
+        width: 58.33%;
+    }
+    .col-t-8{
+        width: 66.66%;
+    }
+    .col-t-9{
+        width: 75%;
+    }
+    .col-t-10{
+        width: 83.33%;
+    }
+    .col-t-11{
+        width: 91.66%;
+    }
+    .col-t-12{
+        width: 100%;
+    }
+}
+
+/* desktop dimensions */
+
+@media only screen and (min-width:1001px){
+    [class*="col-"]{
+        float: left;
+    }
+    .col-1{
+        width: 8.33%;
+    }
+    .col-2{
+        width: 16.66%;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: 33.33%;
+    }
+    .col-5{
+        width: 41.66%;
+    }
+    .col-6{
+        width: 50%;
+    }
+    .col-7{
+        width: 58.33%;
+    }
+    .col-8{
+        width: 66.66%;
+    }
+    .col-9{
+        width: 75%;
+    }
+    .col-10{
+        width: 83.33%;
+    }
+    .col-11{
+        width: 91.66%;
+    }
+    .col-12{
+        width: 100%;
+    }
+}
+
+/* navigacija, heder, futer */
+
+header,footer{
+    background-image: linear-gradient(var(--roze1),var(--roze4));
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    bottom: 0%;
+    position: fixed;
+}
+
+footer img {
+    width: 20px;
+}
+
+header img{
+    width: 10%;
+    height: 10%;
+}
+
+nav ul li{
+    list-style: none;
+    text-align: center;
+    padding: 14px;
+    border-right: 2px solid var(--roze4);
+    border-bottom: 1px solid var(--roze4);
+    background-color: var(--bela);
+}
+
+nav ul li:hover{
+    color: var(--roze2);
+    background-color: var(--roze1);
+}
+
+/* bodi */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:myFirstFont;
+    color: var(--roze5);
+}
+
+body{
+    background-image: url("../Slike/Background.png");
+    /* animation: transition 0.6s; */
+    background-size: cover;
+}
+
+/* hiperlinkovi */
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: var(--roze2);
+}
+
+a:active{
+    color: var(--roze6);
+}
+
+/* animacija za slajdsou (index i webshop) */
+
+.slajdsou{
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+  
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+iframe{
+    border: none;
+}
+
+@keyframes transition{
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+}
+
+    /* INDEX.HTML */
+
+/* naslovni pasus */
+
+#pasusif{
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px 20px 20px;
+    background-image: linear-gradient(var(--roze1),var(--roze4));
+}
+
+/* tabela */
+
+div table tr td{
+    padding: 4% 4% 0% 4%;
+}
+
+/* hiperlink za sidro tag koji vodi ka stranicama */
+
+.odeljenja{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* uvodni pasus */
+
+.uvod{
+    padding: 4% 4% 0% 4%;
+}
+
+/* potpis i WHC logo */
+
+.potpis{
+    padding: 0% 3% 0% 3%;
+}
+
+.potpislogo{
+    padding: 0% 6% 0% 0%;
+}
+
+/* button */
+
+.dugme{
+    text-align: center;
+}
+
+input[type=button],input[type=submit]{
+    background-color: var(--roze1);
+    border: solid 1px var(--roze5);
+    border-radius: 10px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--roze1);
+    border: solid 1px var(--roze5);
+    border-radius: 5%;
+    margin: 10%;
+    padding: 1%;
+    box-shadow: 5px 5px;
+}
+
+input[type=button]:hover,input[type=submit]:hover,button:hover{
+    background-color: var(--roze4);
+    border: solid 1px var(--roze2);
+}
+
+/* sponzori */
+
+.logosponzor{
+    background-color: var(--bela);
+    text-align: center;
+    padding: 0.8% 0.8% 2% 0.8%;
+}
+
+.logosponzor img{
+    width: 75px;
+    height: 75px;
+}
+
+.sponzori{
+    margin-bottom: 3.6%;
+}
+
+        /* ONAMA.HTML */
+
+/* klase za slike nagrada, nagrada1 je za sliku koja je vecih dimenzija */
+
+.nagradetabela{
+    width: 65%;
+    box-shadow: 5px 5px;
+}
+
+#nagradetabela1{
+    width: 50%;
+    box-shadow: 5px 5px;
+}
+
+/* tabela sa kvalifikacijama */
+
+#tabelaOnama {
+    text-align: center;
+    padding: 1% 2% 5% 2%;
+}
+
+#tabelaOnama div {
+    padding: 1%;
+}
+
+        /* LEKARI.HTML*/
+
+/* tabela lekara */
+
+.lekari div{
+    text-align: center;
+    padding: 1%;
+}
+
+/* naziv specijalizacije */
+
+.naziv{
+    background-image: linear-gradient(var(--roze1),var(--roze4));
+}
+
+/* profili lekara */
+
+.profil{
+    background-color: var(--bela);
+    padding: 1.5%;
+}
+
+/* lista dodata kao drugi red profila, cisto da bi stavila donju marginu */
+
+#lista{
+    margin-bottom: 2.1%;
+}
+
+        /* WEBSHOP.HTML */
+
+/* tabela elemenata za kupovinu */
+
+.tabelawebshop{
+    text-align: center;
+}
+
+/* tabela cena */
+
+.tabelawebshopinf{
+    padding:0% 0% 3% 0%;
+}
+
+/* tabela imena */
+
+.tabelawebshopinfo{
+    padding:3% 0% 0% 0%;
+}
+
+/* celija iz tabele za zakazivanje pregleda i za narudzbenicu (index i webshop) */
+
+.zakazivanje td{
+    padding: 1%;
+}
+
+        /* USLUGE.HTML */
+
+/* klasicna tabela sa mogucim uslugama */
+
+#tabelausluga{
+    background-color: var(--bela);
+    padding: 0%;
+    text-align: center;
+}
+
+/* podesavanje padinga celije */
+
+#tabelausluga td{
+    padding: 1.25%;
+}
+
+        /* KONTAKTIRAJTENAS.HTML */
+
+/* 3 diva za mogucnost kontaktiranja */
+
+.kontakt{
+    background-color: var(--bela);
+    padding: 2%;
+    border: solid 1px var(--roze5);
+    margin: 2% 4% 4% 4%;
+    text-align: center;
+}
+
+/* ikonice */
+
+.kontakt img{
+    width: 12%;
+}
+
+/* podesavanje padinga u divovima */
+
+.kontakt p,.kontakt h3, .kontakt iframe{
+    padding: 1.75%;
+}
+
+            /* ISTRAZIVANJA */
+
+.istrazivanja{
+    text-align: center;
+}
+
+.istrazivanja img{
+    width: 30%;
+    background-color: var(--bela);
+    padding: 4%;
+}
+
+.istrazivanja p{
+    padding: 5%;
+}
+
+.istrazivanja div div{
+    background-color: var(--bela);
+    height: 360px;
+    border: solid 1px var(--roze5);
+    padding-bottom: 2%;
+}
+
+.publikacijenaslov{
+    background-image: linear-gradient(var(--roze1),var(--roze4));
+    padding: 2% 3% 2% 3%;
+}
+
+.istrazivanja .is{
+    padding: 3%;
+}
+
+.istrazivanja .pd{
+    padding: 0% 3% 3% 3%;
+}
