@@ -104,8 +104,14 @@ ubaci.addEventListener("click", function(event) {
 
 let animacije = document.querySelectorAll(".animacija");
 animacije.forEach((animacija) => {
+    let kliknuto = false;
     animacija.addEventListener("click", () => {
-        animacija.src = `../Slike/Logoi/lajkanimacija.gif`;
+        if (!kliknuto) {
+            animacija.src = `../Slike/Logoi/lajkanimacija.gif`;
+          } else {
+            animacija.src = `../Slike/Logoi/lajk.png`;
+          }
+        kliknuto = !kliknuto;
     });
 });
 
