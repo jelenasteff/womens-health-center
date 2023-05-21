@@ -45,7 +45,10 @@
         margin-bottom: 7%;
     }
     .k-pading{
-        padding-right: 8%;
+        padding-right: 1%;
+    }
+    .u-pading{
+        padding: 0% 4% 0% 3%;
     }
 }
 
