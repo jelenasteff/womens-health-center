@@ -107,7 +107,7 @@ animacije.forEach((animacija) => {
     let kliknuto = false;
     animacija.addEventListener("click", () => {
         if (!kliknuto) {
-            animacija.src = `../Slike/Logoi/lajkanimacija.gif`;
+            animacija.src = `../Slike/Logoi/lajk1.png`;
           } else {
             animacija.src = `../Slike/Logoi/lajk.png`;
           }

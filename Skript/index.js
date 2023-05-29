@@ -1,11 +1,12 @@
        //  SLAJDSOU
 
 var slideIndex=0;
-let klasa=["Slajd1","Slajd2","Slajd3",]
+let klasa=["Slajd1","Slajd2","Slajd3","Slajd4"]
 
 showSlides(klasa[0], slideIndex);
 showSlides(klasa[1], slideIndex);
 showSlides(klasa[2], slideIndex);
+showSlides(klasa[3], slideIndex);
 
 function showSlides(className, slideIndex) {
   let i;
