@@ -160,8 +160,9 @@ header,footer{
 }
 
 footer{
-    bottom: 0%;
+    bottom: 0px;
     position: fixed;
+    height: 70px;
 }
 
 footer img {
@@ -331,8 +332,11 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
     height: 75px;
 }
 
-.sponzori{
+/* .sponzori{
     margin-bottom: 3.6%;
+} */
+.sponzori{
+    margin-bottom: 68px;
 }
 
         /* ONAMA.HTML */
