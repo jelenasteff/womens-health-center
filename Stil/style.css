@@ -325,6 +325,12 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
     border: solid 1px var(--roze2);
 }
 
+/**/
+
+.slikeLaboratorija{
+    height: 350px;
+}
+
 /* sponzori */
 
 .logosponzor{

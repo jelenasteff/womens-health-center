@@ -35,7 +35,7 @@ left.addEventListener("click",()=>{
   }
   switch(counter) {
     case 0:
-      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=
       `
       <h2 class="col-12">
@@ -58,7 +58,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 1:
-      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Papanikolau test
@@ -80,7 +80,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 2:
-      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Neuropsihijatar
@@ -102,7 +102,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 3:
-      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Ginekološki pregled
@@ -133,7 +133,7 @@ right.addEventListener("click",()=>{
   }
   switch(counter) {
     case 0:
-      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=
       `
       <h2 class="col-12">
@@ -156,7 +156,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 1:
-      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Papanikolau test
@@ -178,7 +178,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 2:
-      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Neuropsihijatar
@@ -200,7 +200,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 3:
-      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Ginekološki pregled
