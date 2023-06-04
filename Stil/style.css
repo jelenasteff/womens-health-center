@@ -206,7 +206,6 @@ nav ul li:hover{
 
 body{
     background-image: url("../Slike/Background.png");
-    /* animation: transition 0.6s; */
     background-size: cover;
 }
 
@@ -244,18 +243,6 @@ a:active{
 iframe{
     border: none;
 }
-
-/* @keyframes transition{
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-
-    }
-} */
 
     /* INDEX.HTML */
 
@@ -325,7 +312,7 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
     border: solid 1px var(--roze2);
 }
 
-/**/
+/* visina najtrazenijih usluga */
 
 .slikeLaboratorija{
     height: 350px;
