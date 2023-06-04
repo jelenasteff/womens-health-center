@@ -48,6 +48,12 @@
         padding: 0% 4% 0% 1%;
         font-size: small;
     }
+    .prikazi{
+        display: block;
+    }
+    .sakrij{
+        display: none;
+    }
 }
 
 /* tablet dimensions */
@@ -98,6 +104,9 @@
     }
     .k-pading{
         padding-right: 7%;
+    }
+    .displaynone{
+        display: none;
     }
 }
 
