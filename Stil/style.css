@@ -54,6 +54,10 @@
     .sakrij{
         display: none;
     }
+    .sliciceMobilnaVerzija{
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* tablet dimensions */
@@ -99,13 +103,13 @@
     .col-t-12{
         width: 100%;
     }
-    #hera{
-        margin-bottom: 3%;
-    }
     .k-pading{
         padding-right: 7%;
     }
     .displaynone{
+        display: none;
+    }
+    .displayNt{
         display: none;
     }
 }
@@ -153,6 +157,9 @@
         width: 100%;
     }
     .displaynone{
+        display: none;
+    }
+    .displayNd{
         display: none;
     }
 }

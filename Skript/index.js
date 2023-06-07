@@ -23,8 +23,8 @@ function showSlides(className, slideIndex) {
       //  BROJAC ZA SLEDECU SLIKU ZA USLUGE
 
 let counter=0;
-let right = document.querySelector("#right");
-let left = document.querySelector("#left");
+let right = document.querySelector(".slicicaudesno");
+let left = document.querySelector(".slicicaulevo");
 let nextpic = document.querySelector("#nextpic");
 let nextpost = document.querySelector("#nextpost");
 
@@ -292,11 +292,16 @@ document.addEventListener("DOMContentLoaded", function() {
           alert("Molimo unesite obavezne podatke.");
       }
       else{
-        if (izabraniLekar && izabraniDatum) {
-          alert(`Poštovana ${imePrezimeVrednost}, Vaš pregled je zakazan za ${izabraniDatum} kod ${izabraniLekar.value}.`);
-          window.open("Stranice/Potvrda.html","_self");
-        } else {
-          alert("Molimo izaberite lekara i datum.");
+        if(jmbgVrednost.length<13){
+          alert("JMBG mora da sadrži 13 cifara.");
+        }
+        else{
+          if (izabraniLekar && izabraniDatum) {
+            alert(`Poštovana ${imePrezimeVrednost}, Vaš pregled je zakazan za ${izabraniDatum} kod ${izabraniLekar.value}.`);
+            window.open("Stranice/Potvrda.html","_self");
+          } else {
+            alert("Molimo izaberite lekara i datum.");
+          }
         }
       }
   });
