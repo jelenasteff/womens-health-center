@@ -54,6 +54,9 @@
     .sakrij{
         display: none;
     }
+    .belaPozadina{
+        background-color: var(--bela);
+    }
 }
 
 /* tablet dimensions */
