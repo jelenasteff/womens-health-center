@@ -54,10 +54,6 @@
     .sakrij{
         display: none;
     }
-    .sliciceMobilnaVerzija{
-        display: inline-block;
-        vertical-align: middle;
-    }
 }
 
 /* tablet dimensions */
@@ -109,9 +105,6 @@
     .displaynone{
         display: none;
     }
-    .displayNt{
-        display: none;
-    }
 }
 
 /* desktop dimensions */
@@ -159,8 +152,8 @@
     .displaynone{
         display: none;
     }
-    .displayNd{
-        display: none;
+    .sponzori{
+        margin-bottom: 68px;
     }
 }
 
@@ -336,13 +329,6 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
 .logosponzor img{
     width: 75px;
     height: 75px;
-}
-
-/* .sponzori{
-    margin-bottom: 3.6%;
-} */
-.sponzori{
-    margin-bottom: 68px;
 }
 
         /* ONAMA.HTML */
