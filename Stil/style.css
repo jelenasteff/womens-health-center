@@ -152,9 +152,6 @@
     .displaynone{
         display: none;
     }
-    .sponzori{
-        margin-bottom: 68px;
-    }
 }
 
 /* navigacija, heder, futer */
@@ -329,6 +326,10 @@ input[type=button]:hover,input[type=submit]:hover,button:hover{
 .logosponzor img{
     width: 75px;
     height: 75px;
+}
+
+.sponzori{
+    margin-bottom: 68px;
 }
 
         /* ONAMA.HTML */
