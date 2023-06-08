@@ -27,6 +27,7 @@ let right = document.querySelector(".slicicaudesno");
 let left = document.querySelector(".slicicaulevo");
 let nextpic = document.querySelector("#nextpic");
 let nextpost = document.querySelector("#nextpost");
+let timerId;
 
 left.addEventListener("click",()=>{
   counter--;
@@ -35,7 +36,7 @@ left.addEventListener("click",()=>{
   }
   switch(counter) {
     case 0:
-      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=
       `
       <h2 class="col-12">
@@ -58,7 +59,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 1:
-      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Papanikolau test
@@ -80,7 +81,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 2:
-      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Neuropsihijatar
@@ -102,7 +103,7 @@ left.addEventListener("click",()=>{
       `;
     break;
     case 3:
-      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Ginekološki pregled
@@ -133,7 +134,7 @@ right.addEventListener("click",()=>{
   }
   switch(counter) {
     case 0:
-      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=
       `
       <h2 class="col-12">
@@ -156,7 +157,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 1:
-      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine1.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Papanikolau test
@@ -178,7 +179,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 2:
-      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine2.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Neuropsihijatar
@@ -200,7 +201,7 @@ right.addEventListener("click",()=>{
       `;
     break;
     case 3:
-      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="col-12 slikeLaboratorija">`;
+      nextpic.innerHTML=`<img src="Slike/Medicine3.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
       nextpost.innerHTML=`
       <h2 class="col-12">
         Ginekološki pregled
@@ -223,6 +224,131 @@ right.addEventListener("click",()=>{
     break;
   }
 })
+
+function changeContent() {
+  switch (counter) {
+    case 0:
+      nextpic.innerHTML = `<img src="Slike/Medicine.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
+      nextpost.innerHTML =
+        `
+        <h2 class="col-12">
+          Laboratorija
+        </h2>
+        <table class="col-12">
+          <tr style="padding:2%">
+            <td>Krvna slika</td>
+            <td>480,00RSD</td>
+          </tr>
+          <tr>
+            <td>Trombociti</td>
+            <td>120,00RSD</td>
+          </tr>
+          <tr>
+            <td>Leukociti</td>
+            <td>150,00RSD</td>
+          </tr>
+        </table>
+        `;
+      break;
+    case 1:
+      nextpic.innerHTML = `<img src="Slike/Medicine1.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
+      nextpost.innerHTML = `
+        <h2 class="col-12">
+          Papanikolau test
+        </h2>
+        <table class="col-12">
+          <tr style="padding:2%">
+            <td>Bris</td>
+            <td>200,00RSD</td>
+          </tr>
+          <tr>
+            <td>Protein C*</td>
+            <td>1200,00RSD</td>
+          </tr>
+          <tr>
+            <td>Komplement CH50*</td>
+            <td>1500,00RSD</td>
+          </tr>
+        </table>
+        `;
+      break;
+    case 2:
+      nextpic.innerHTML = `<img src="Slike/Medicine2.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
+      nextpost.innerHTML = `
+        <h2 class="col-12">
+          Neuropsihijatar
+        </h2>
+        <table class="col-12">
+          <tr style="padding:2%">
+            <td>Sat vremena</td>
+            <td>599,00RSD</td>
+          </tr>
+          <tr>
+            <td>Dva sata</td>
+            <td>1099,00RSD</td>
+          </tr>
+          <tr>
+            <td>Recept za lekove</td>
+            <td>150,00RSD</td>
+          </tr>
+        </table>
+        `;
+      break;
+    case 3:
+      nextpic.innerHTML = `<img src="Slike/Medicine3.jpg" id="nextpic" class="fade col-12 slikeLaboratorija">`;
+      nextpost.innerHTML = `
+        <h2 class="col-12">
+          Ginekološki pregled
+        </h2>
+        <table class="col-12">
+          <tr style="padding:2%">
+            <td>Bris</td>
+            <td>180,00RSD</td>
+          </tr>
+          <tr>
+            <td>Gama GT</td>
+            <td>1299,00RSD</td>
+          </tr>
+          <tr>
+            <td>Progesteron</td>
+            <td>1599,00RSD</td>
+          </tr>
+        </table>
+        `;
+      break;
+  }
+}
+
+function showNextSlide() {
+  counter++;
+  if (counter > 3) {
+    counter = 0;
+  }
+  changeContent();
+}
+
+function startSlideshow() {
+  stopSlideshow();
+  timerId = setInterval(showNextSlide, 4000);
+}
+
+function stopSlideshow() {
+  clearInterval(timerId);
+}
+
+function handleWindowResize() {
+  if (window.innerWidth <= 600) {
+    changeContent();
+    startSlideshow();
+  } else {
+    stopSlideshow();
+  }
+}
+
+left.addEventListener("click", changeContent);
+right.addEventListener("click", changeContent);
+window.addEventListener("load", handleWindowResize);
+window.addEventListener("resize", handleWindowResize);
 
       //  ZAKAZIVANJE PREGLEDA
 
